@@ -40,17 +40,27 @@
 
 aside {
   width: 35%;
-  background-color: red;
+  background-color: white;
   height: 100%;
   border-right: 1px solid #0e0e88;
 }
+
+.aside-top-stripe .left, .aside-top-stripe .right, .main-top-stripe .left, .main-top-stripe .right {
+  width: 172px;
+  border: 1px solid red;
+}
+
 
 .serving-stripe {
   height: 80px;
   background-color: #8edafc;
   width: 100%;
 }
-  /* background-color: #fbfaf8; */
+
+.search-stripe {
+  background-color: #fbfaf8;
+  height: 50px;
+}
 .main {
   height: 100%;
   width: 65%;
@@ -65,4 +75,6 @@ aside {
 .main-bottom, .main-top-stripe, .aside-top-stripe {
   height: 70px;
   background-color: #f3eeea;
+  display: flex;
+  justify-content: space-between;
 }
