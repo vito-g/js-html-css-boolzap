@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .clearfix {
   content: '';
   display: table;
@@ -77,13 +81,15 @@ input {
 
 .contacts {
   overflow-y: scroll;
-  height: 30vh;
+  height: 60vh;
   border: 1px solid black;
 }
 
 .single-contact {
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid lightgrey;
+  padding: 7px 14px;
 }
 
 .name {
