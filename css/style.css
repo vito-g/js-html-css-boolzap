@@ -38,6 +38,12 @@
   height: calc(100vh - 40px);
 }
 
+.pic {
+  width: 70px;
+  height: 100%;
+  border: 1px solid black;
+}
+
 aside {
   width: 35%;
   background-color: white;
@@ -77,4 +83,10 @@ aside {
   background-color: #f3eeea;
   display: flex;
   justify-content: space-between;
+}
+
+.msg-box {
+  height: 100%;
+  width: calc(100% - 140px);
+  border: 1px solid black;
 }
