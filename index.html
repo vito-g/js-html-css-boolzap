@@ -37,9 +37,12 @@
           </div>
           <div class="contacts">
             <div v-for="(element, index) in contacts" class="single-contact">
-              <img :src="element.avatar" alt="">
-
-              {{element.name}}
+              <div class="avatar">
+                <img :src="element.avatar" alt="">
+              </div>
+              <div class="name">
+                {{element.name}}
+              </div>
             </div>
 
           </div>
