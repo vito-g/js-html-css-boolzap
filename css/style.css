@@ -56,6 +56,14 @@ aside {
   border-right: 1px solid #0e0e88;
 }
 
+.aside-top-stripe .left{
+  display: flex;
+}
+
+.aside-top-stripe .left > div:last-child {
+  margin: auto;
+}
+
 .aside-top-stripe .left, .aside-top-stripe .right, .main-top-stripe .left, .main-top-stripe .right {
   width: 172px;
   border: 1px solid red;
@@ -72,12 +80,22 @@ aside {
   background-color: #fbfaf8;
   height: 50px;
   display: flex;
+  position: relative;
+}
+
+.search-stripe i {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  color: #b5b9bc;
 }
 
 input {
   width: 95%;
   height: 60%;;
   margin: auto;
+  padding-left: 16%;
 }
 
 .contacts {
