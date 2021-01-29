@@ -24,7 +24,7 @@
 
 .back-band {
   background-color: #009788;
-  height: 90px;
+  height: 110px;
   width:100%;
   position: fixed;
   top: 0;
@@ -42,20 +42,27 @@ aside {
   width: 35%;
   background-color: red;
   height: 100%;
+  border-right: 1px solid #0e0e88;
 }
 
+.serving-stripe {
+  height: 80px;
+  background-color: #8edafc;
+  width: 100%;
+}
+  /* background-color: #fbfaf8; */
 .main {
   height: 100%;
   width: 65%;
 }
 
 .main-top {
-  height: calc(100% - 80px);
+  height: calc(100% - 70px);
   /* background-color: black; */
   background-image: url("../img/mine.jpg");
 }
 
-.main-bottom {
-  height: 80px;
-  background-color: grey;
+.main-bottom, .main-top-stripe, .aside-top-stripe {
+  height: 70px;
+  background-color: #f3eeea;
 }
