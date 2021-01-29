@@ -36,8 +36,10 @@
             <input type="search" name="" value="">
           </div>
           <div class="contacts">
-            <div v-for="(item, index) in contacts" class="single-contact">
-              {{contacts[index].name}}
+            <div v-for="(element, index) in contacts" class="single-contact">
+              <img :src="element.avatar" alt="">
+
+              {{element.name}}
             </div>
 
           </div>

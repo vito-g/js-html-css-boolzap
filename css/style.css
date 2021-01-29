@@ -81,6 +81,11 @@ input {
   border: 1px solid black;
 }
 
+img {
+  width: 70px;
+  height: 70px;
+}
+
 .main {
   height: 100%;
   width: 65%;
