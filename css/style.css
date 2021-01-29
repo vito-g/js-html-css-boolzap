@@ -65,8 +65,21 @@ aside {
 }
 
 .aside-top-stripe .left, .aside-top-stripe .right, .main-top-stripe .left, .main-top-stripe .right {
-  width: 172px;
+  /* width: 172px; */
+  width: 182px;
   border: 1px solid red;
+}
+
+.aside-top-stripe .right  {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 8px;
+}
+
+.aside-top-stripe .right i {
+  color: #b1b1b1;
+  font-size: 20px;
+  margin: auto 8px;
 }
 
 
