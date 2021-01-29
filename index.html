@@ -22,9 +22,10 @@
           <div class="aside-top-stripe">
             <div class="left">
               <div class="pic">
-                <img src="img/avatar_io.jpg" alt="">
+                <!-- <img src="img/avatar_io.jpg" alt=""> -->
+                <img :src="user.avatar" alt="">
               </div>
-              <div>Nome Utente</div>
+              <div>{{user.name}}</div>
             </div>
             <div class="right">
 
@@ -41,7 +42,8 @@
           <div class="contacts">
             <div v-for="(element, index) in contacts" class="single-contact">
               <div class="avatar">
-                <img :src="element.avatar" alt="">
+                <!-- <img :src="element.avatar" alt=""> -->
+                <img :src="contacts[index].avatar" alt="">
               </div>
               <div class="name">
                 {{element.name}}
