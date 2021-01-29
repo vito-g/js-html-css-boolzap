@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.container {
+  width: 80%;
+  min-width: 950px;
+  margin: 20px auto;
+  height: calc(100vh - 40px);
+  /* border: 1px solid black; */
+}
+
+aside {
+  width: 35%;
+  background-color: red;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 65%;
+}
+
+.main-top {
+  height: calc(100% - 80px);
+  background-color: black;
+}
+
+.main-bottom {
+  height: 80px;
+  background-color: grey;
+}
