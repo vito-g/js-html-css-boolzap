@@ -22,7 +22,7 @@
   z-index: -1;
 }
 
-header {
+.back-band {
   background-color: #009788;
   height: 90px;
   width:100%;
@@ -36,7 +36,6 @@ header {
   min-width: 950px;
   margin: 20px auto;
   height: calc(100vh - 40px);
-  /* position: fixed; */
 }
 
 aside {
