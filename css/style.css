@@ -144,6 +144,7 @@ input {
   height: 60%;;
   margin: auto;
   padding-left: 16%;
+  border: none;
 }
 
 .contacts {
