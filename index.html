@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <title>JS-HTML-CSS-BOOLZAP</title>
   </head>
@@ -25,7 +25,7 @@
                 <!-- <img src="img/avatar_io.jpg" alt=""> -->
                 <img :src="user.avatar" alt="">
               </div>
-              <div>{{user.name}}</div>
+              <div class="fnt-sz-minor">{{user.name}}</div>
             </div>
             <div class="right">
               <i class="fas fa-circle-notch"></i>
@@ -37,6 +37,12 @@
           <div class="serving-stripe">
             <div class="bell">
               <i class="fas fa-bell-slash"></i>
+            </div>
+            <div class="serving-text fnt-sz-minor">
+              Ricevi notifiche di nuovi messaggi
+              <div>
+                <a href="#"> Attiva notifiche desktop</a>
+              </div>
             </div>
           </div>
           <div class="search-stripe">

@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
 .clearfix {
@@ -65,10 +66,27 @@ body {
   display: flex;
 }
 
+.fnt-sz-minor {
+  font-size: 13px;
+}
+
+.serving-stripe .serving-text {
+  margin: auto 0;
+}
+
+.serving-stripe .serving-text > div {
+  font-size: 11px;
+  font-weight: 400;
+}
+
 .serving-stripe .bell i {
   margin: auto;
   color: #8edafc;
   font-size: 20px;
+}
+
+.serving-stripe a {
+  color: #417992;
 }
 
 
@@ -105,8 +123,6 @@ aside {
   margin: auto 8px;
 }
 
-
-
 .search-stripe {
   background-color: #fbfaf8;
   height: 50px;
@@ -136,6 +152,10 @@ input {
   /* height: 516px; */
   /* height: calc(100% - 200px); */
   border: 1px solid black;
+}
+
+.contacts .name {
+  font-size: 15px;
 }
 
 .contacts > div:hover {
