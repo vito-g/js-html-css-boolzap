@@ -11,7 +11,7 @@ Copiate nel vostro data l'array di oggetti contacts, che trovate nella cartella 
 La cartella con il documento (che comprende al momento solo la prima milestone) è qui https://drive.google.com/drive/u/1/folders/1Gy9-JSi8OKpv3bK8JKhkYIvsOgd3FhsU
 Popoleremo il documento di volta in volta, con l'aggiunta delle nuove milestone.
 Nella cartella troverete le immagini, uno screen di riferimento e infine il video per capire al meglio come risponde la pagina ai vari resize del browser.*/
-
+// -------------------------------------------------
 
 new Vue({
 
