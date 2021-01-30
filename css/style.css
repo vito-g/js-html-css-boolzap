@@ -100,6 +100,10 @@ aside {
   margin: auto;
 }
 
+i, img, .single-contact, .name {
+  cursor: pointer;
+}
+
 .serving-stripe {
   display: flex;
   height: 80px;
@@ -250,15 +254,32 @@ line-height: 70px;
 .chat-box {
   width: 200px;
   height: 70px;
+  /* height: auto; */
   /* border: 1px solid black; */
   background-color: white;
   border-radius: 5px;
-  padding: 10px;
+  /* display: flex;
+  justify-content: flex-end; */
 }
 
 .chat-box.user {
   background-color: #daf9c0;
 }
+
+.msg {
+  /* padding: 10px; */
+}
+
+/* .time {
+  position: relative;
+  width: 60px;
+}
+
+.time span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+} */
 
 .main-bottom, .main-top-stripe, .aside-top-stripe {
   height: 70px;

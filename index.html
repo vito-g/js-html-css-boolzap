@@ -25,7 +25,7 @@
                 <!-- <img src="img/avatar_io.jpg" alt=""> -->
                 <img :src="user.avatar" alt="">
               </div>
-              <div class="fnt-sz-minor">{{user.name}}</div>
+              <div class="name fnt-sz-minor">{{user.name}}</div>
             </div>
             <div class="right">
               <i class="fas fa-circle-notch"></i>
@@ -87,7 +87,8 @@
             <div class="chat-list">
               <div class="chat-row">
                 <div class="chat-box user">
-                  {{message}}
+                  <span class="msg">{{message}}</span>
+                  <!-- <div class="time"><span> 17.25</span></div> -->
                 </div>
               </div>
               <div class="chat-row-guest">
