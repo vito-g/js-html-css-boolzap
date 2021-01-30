@@ -85,6 +85,12 @@ aside {
   margin: auto 8px;
 }
 
+.main-bottom i {
+  color: #6d717c;
+  font-size: 24px;
+  margin: auto;
+}
+
 .serving-stripe {
   display: flex;
   height: 80px;
