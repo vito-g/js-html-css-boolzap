@@ -87,7 +87,7 @@
             <div class="chat-list">
               <div class="chat-row">
                 <div class="chat-box user">
-
+                  {{message}}
                 </div>
               </div>
               <div class="chat-row-guest">
@@ -128,7 +128,7 @@
               <i class="far fa-smile"></i>
             </div>
             <div class="msg-box">
-              <input type="search" name="" value="" placeholder="Scrivi un messaggio">
+              <input v-model="message" type="search" name="" value="" placeholder="Scrivi un messaggio">
             </div>
             <div class="pic">
               <i class="fas fa-microphone"></i>
