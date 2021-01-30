@@ -56,7 +56,8 @@
                 <img :src="contacts[index].avatar" alt="">
               </div>
               <div class="name">
-                {{element.name}}
+                <!-- {{element.name}} -->
+                {{contacts[index].name}}
               </div>
             </div>
 
@@ -67,7 +68,14 @@
             <div class="main-top-stripe">
               <div class="left">
                 <div class="pic">
-
+                    <img :src="contacts[0].avatar" alt="">
+                </div>
+                <div class="name">
+                  <!-- {{element.name}} -->
+                  {{contacts[0].name}}
+                  <div class="fnt-sz-minor">
+                    Ultimo accesso oggi alle
+                  </div>
                 </div>
               </div>
               <div class="right">
