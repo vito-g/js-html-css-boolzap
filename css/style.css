@@ -172,10 +172,7 @@ input {
 
 .contacts {
   overflow-y: scroll;
-  height: 68.5vh;
-  /* height: calc(100vh - 240); */
-  /* height: 516px; */
-  /* height: calc(100% - 200px); */
+  height: calc(100vh - 240px);
   /* border: 1px solid black; */
 }
 
@@ -220,9 +217,43 @@ line-height: 70px;
 }
 
 .main-top {
-  height: calc(100% - 70px);
   /* background-color: black; */
   background-image: url("../img/mine.jpg");
+}
+
+.chat-list {
+  padding-top: 40px;
+  /* border: 1px solid red; */
+  overflow-y: scroll;
+  height: calc(100vh - 180px);
+}
+
+.chat-row {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  /* border: 1px solid black; */
+  padding: 10px 86.4688px;
+}
+
+.chat-row-guest {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* border: 1px solid black; */
+  padding: 10px 86.4688px;
+}
+
+.chat-box {
+  width: 200px;
+  height: 70px;
+  /* border: 1px solid black; */
+  background-color: white;
+  border-radius: 5px;
+}
+
+.chat-box.user {
+  background-color: #daf9c0;
 }
 
 .main-bottom, .main-top-stripe, .aside-top-stripe {
