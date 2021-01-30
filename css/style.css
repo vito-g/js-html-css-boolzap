@@ -149,8 +149,21 @@ input {
   width: 95%;
   height: 60%;;
   margin: auto;
-  padding-left: 16%;
   border: none;
+}
+
+.search-stripe input {
+  padding-left: 16%;
+}
+
+.main-bottom .msg-box {
+  display: flex;
+}
+
+.main-bottom .msg-box input {
+  border-radius: 3px;
+  border: 1.7px solid #11100e;
+  padding: 20px 15px;
 }
 
 .contacts {
