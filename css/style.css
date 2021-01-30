@@ -46,11 +46,9 @@ body {
 .pic {
   width: 70px;
   height: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
 }
-
-
 
 aside {
   width: 35%;
@@ -165,9 +163,6 @@ input {
   padding-left: 16%;
 }
 
-.main-bottom .msg-box {
-  display: flex;
-}
 
 .main-bottom .msg-box input {
   border-radius: 3px;
@@ -237,8 +232,9 @@ line-height: 70px;
   justify-content: space-between;
 }
 
-.msg-box {
+.main-bottom .msg-box {
+  display: flex;
   height: 100%;
   width: calc(100% - 140px);
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
