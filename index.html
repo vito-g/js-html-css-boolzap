@@ -112,8 +112,11 @@
                 'chat-row sent': (element.status === 'sent'),
                 'chat-row received': (element.status === 'received')
               }">
-                <div class="chat-box sent">
-                  {{element.text}}
+                <div :class="{
+                text: true,
+                'chat-box sent': (element.status === 'sent'),
+                'chat-box received': (element.status === 'received')}">
+                {{element.text}}
                 </div>
               </div>
 <!-- ------------------------------------------------------------------- -->
