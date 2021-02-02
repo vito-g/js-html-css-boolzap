@@ -255,7 +255,7 @@ line-height: 70px;
   width: 200px;
   height: 70px;
   border-radius: 5px;
-
+  padding: 10px;
 }
 
 .chat-box.received {
