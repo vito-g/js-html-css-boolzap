@@ -136,6 +136,7 @@ new Vue({
        text: this.message,
        status: 'sent'
      })
+     this.message = ''
    }
  }
 });
