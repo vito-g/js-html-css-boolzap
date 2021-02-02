@@ -139,8 +139,9 @@
               <i class="far fa-smile"></i>
             </div>
             <div class="msg-box">
-              <!-- <input v-model="message" type="search" name="" value="" placeholder="Scrivi un messaggio"> -->
-              <input type="search" name="" value="" placeholder="Scrivi un messaggio">
+              <input v-model="message" type="search" name="" value="" placeholder="Scrivi un messaggio" @keyup.enter="sendMessageFx">
+
+              <!-- <input type="search" name="" value="" placeholder="Scrivi un messaggio"> -->
             </div>
             <div class="pic">
               <i class="fas fa-microphone"></i>

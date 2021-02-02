@@ -127,12 +127,15 @@ new Vue({
         }
       ],
     },
-  // message: '',
+  message: '',
 
 },
  methods: {
    clickedConversation: function(index) {
      this.activeIndex = index
+   },
+   sendMessageFx: function() {
+     alert('prova')
    }
  }
 });
