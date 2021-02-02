@@ -244,15 +244,10 @@ line-height: 70px;
 
 .chat-row.sent{
   flex-direction: row-reverse;
-  /* border: 1px solid black; */
 }
 
 .chat-row.received {
-  /* display: flex; */
   flex-direction: row;
-  /* width: 100%; */
-  /* border: 1px solid black; */
-  /* padding: 10px 86.4688px; */
 }
 
 .chat-box {
