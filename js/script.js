@@ -137,6 +137,9 @@ new Vue({
        status: 'sent'
      })
      this.message = ''
+    setTimeout(function(){
+      alert("Hello");
+    }, 5000);
    }
  }
 });
