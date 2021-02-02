@@ -139,14 +139,14 @@ new Vue({
      this.message = '';
      let contact = this.contacts;
   setTimeout(function(){
-      alert("Hello");
+      // alert("Hello");
       //Qui c'è un problema di scope
       contact[index].messages.push({
         date: '10/01/2020 15:50:00',
         text: 'ok',
         status: 'received'
       });
-      console.log('ciao');
+      // console.log('ciao');
     }, 1000);
    }
  }
