@@ -106,16 +106,12 @@
                 </div>
               </div> -->
 <!---------------- END Qui funziona in parte------------------------------ -->
-              <!---il true mi serve veramente?------>
               <div v-for="element in contacts[activeIndex].messages"
               :class="{
-                text: true,
                 'chat-row sent': (element.status === 'sent'),
                 'chat-row received': (element.status === 'received')
               }">
-              <!---il true mi serve veramente?------>
                 <div :class="{
-                text: true,
                 'chat-box sent': (element.status === 'sent'),
                 'chat-box received': (element.status === 'received')}">
                 {{element.text}}

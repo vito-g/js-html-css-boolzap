@@ -14,7 +14,11 @@ Nella cartella troverete le immagini, uno screen di riferimento e infine il vide
 // -------------------------------------------------
 Milestone 2
 Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, visualizzare tutti i messaggi relativi al contatto attivo all’interno del pannello della conversazione
-Click sul contatto mostra la conversazione del contatto cliccato*/
+Click sul contatto mostra la conversazione del contatto cliccato
+------------------------------------------------------
+Milestone 3
+Aggiunta di un messaggio: l’utente scrive un testo nella parte bassa e digitando “enter” il testo viene aggiunto al thread sopra, come messaggio verde
+Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta, che apparirà dopo 1 secondo.*/
 
 new Vue({
 
@@ -124,12 +128,12 @@ new Vue({
       ],
     },
   // message: '',
-  methods: {
-    clickedConversation: function(index) {
-      this.activeIndex = index
-    }
-  }
 
+},
+ methods: {
+   clickedConversation: function(index) {
+     this.activeIndex = index
+   }
  }
 });
 Vue.config.devtools = true;
