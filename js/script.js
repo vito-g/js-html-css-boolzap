@@ -20,6 +20,7 @@ new Vue({
 
  el: '#root',
  data: {
+   activeIndex: 0,
    contacts: [
 	{
 		name: 'Michele',

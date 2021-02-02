@@ -52,12 +52,12 @@
           <div class="contacts">
             <div v-for="(element, index) in contacts" class="single-contact">
               <div class="box-avatar">
-                <!-- <img :src="element.avatar" alt=""> -->
-                <img :src="contacts[index].avatar" alt="">
+                <img :src="element.avatar" alt="">
+                <!-- <img :src="contacts[index].avatar" alt=""> -->
               </div>
               <div class="name">
-                <!-- {{element.name}} -->
-                {{contacts[index].name}}
+                {{element.name}}
+                <!-- {{contacts[index].name}} -->
               </div>
             </div>
 
@@ -88,18 +88,31 @@
             <!-- CHAT LIST -->
             <div class="chat-list">
               <!-- ---------------------------------------------------------- -->
-
-              <div class="chat-row">
+<!-- ------------------------OTTAVIO------------------------------------------- -->
+              <!-- <div v-for="message in contacts[activeIndex].messages"
+              :class="message.status">
                 <div class="chat-box user">
-
+                  {{message.text}}
+                </div>
+              </div> -->
+<!-- ----------------------END Ottavio---------------------------------- -->
+              <div v-for="element in contacts[activeIndex].messages"
+              :class="element.status">
+                <div class="chat-box user">
+                  {{element.text}}
                 </div>
               </div>
-              
-              <div class="chat-row-guest">
+<!-- ------------------------------------------------------------------- -->
+              <!--<div class="chat-row-guest">
                 <div class="chat-box">
 
                 </div>
-              </div>
+              </div>-->
+              <!-- <div v-for="index in contacts.messages" class="chat-row">
+                <div class="chat-box">
+                  {{contacts.messages.text}}
+                </div>
+              </div> -->
 
             <!-- --------------------------------------------------------------- -->
             </div>
