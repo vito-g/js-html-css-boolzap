@@ -50,7 +50,7 @@
             <input type="search" name="" value="" placeholder="Cerca o inizia una nuova chat">
           </div>
           <div class="contacts">
-            <div v-for="(element, index) in contacts" class="single-contact">
+            <div v-for="(element, index) in contacts" class="single-contact" @click="clickedConversation(index)">
               <div class="box-avatar">
                 <img :src="element.avatar" alt="">
                 <!-- <img :src="contacts[index].avatar" alt=""> -->
@@ -143,7 +143,8 @@
               <i class="far fa-smile"></i>
             </div>
             <div class="msg-box">
-              <input v-model="message" type="search" name="" value="" placeholder="Scrivi un messaggio">
+              <!-- <input v-model="message" type="search" name="" value="" placeholder="Scrivi un messaggio"> -->
+              <input type="search" name="" value="" placeholder="Scrivi un messaggio">
             </div>
             <div class="pic">
               <i class="fas fa-microphone"></i>
