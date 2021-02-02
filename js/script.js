@@ -136,10 +136,18 @@ new Vue({
        text: this.message,
        status: 'sent'
      })
-     this.message = ''
-    setTimeout(function(){
+     this.message = '';
+     let contact = this.contacts;
+  setTimeout(function(){
       alert("Hello");
-    }, 5000);
+      //Qui c'è un problema di scope
+      contact[index].messages.push({
+        date: '10/01/2020 15:50:00',
+        text: 'ok',
+        status: 'received'
+      });
+      console.log('ciao');
+    }, 1000);
    }
  }
 });
