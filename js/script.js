@@ -10,8 +10,11 @@ Visualizzazione dinamica della lista contatti: tramite la direttiva v-for, visua
 Copiate nel vostro data l'array di oggetti contacts, che trovate nella cartella drive, oppure qui in allegato.
 La cartella con il documento (che comprende al momento solo la prima milestone) è qui https://drive.google.com/drive/u/1/folders/1Gy9-JSi8OKpv3bK8JKhkYIvsOgd3FhsU
 Popoleremo il documento di volta in volta, con l'aggiunta delle nuove milestone.
-Nella cartella troverete le immagini, uno screen di riferimento e infine il video per capire al meglio come risponde la pagina ai vari resize del browser.*/
+Nella cartella troverete le immagini, uno screen di riferimento e infine il video per capire al meglio come risponde la pagina ai vari resize del browser.
 // -------------------------------------------------
+Milestone 2
+Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, visualizzare tutti i messaggi relativi al contatto attivo all’interno del pannello della conversazione
+Click sul contatto mostra la conversazione del contatto cliccato*/
 
 new Vue({
 
