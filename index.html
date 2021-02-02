@@ -96,9 +96,23 @@
                 </div>
               </div> -->
 <!-- ----------------------END Ottavio---------------------------------- -->
+<!-- --------------Qui funziona in parte---------- -->
+              <!-- <div v-for="element in contacts[activeIndex].messages"
+              :class="{
+                element: true
+              }">
+                <div class="chat-box sent">
+                  {{element.text}}
+                </div>
+              </div> -->
+<!---------------- END Qui funziona in parte------------------------------ -->
               <div v-for="element in contacts[activeIndex].messages"
-              :class="element.status">
-                <div class="chat-box user">
+              :class="{
+                text: true,
+                'chat-row sent': (element.status === 'sent'),
+                'chat-row received': (element.status === 'received')
+              }">
+                <div class="chat-box sent">
                   {{element.text}}
                 </div>
               </div>

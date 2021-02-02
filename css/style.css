@@ -235,7 +235,7 @@ line-height: 70px;
   min-height: 60px;
 }
 
-.chat-row {
+.chat-row.sent{
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
@@ -243,7 +243,7 @@ line-height: 70px;
   padding: 10px 86.4688px;
 }
 
-.chat-row-guest {
+.chat-row.received {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -262,7 +262,7 @@ line-height: 70px;
   justify-content: flex-end; */
 }
 
-.chat-box.user {
+.chat-box.sent {
   background-color: #daf9c0;
 }
 
