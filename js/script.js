@@ -116,26 +116,26 @@ new Vue({
       visible: true,
       messages: [
         {
-          date: '10/01/2020 15:30:55',
-          text: 'Lo sai che ha aperto una nuova pizzeria?',
-          status: 'sent'
-        },
-        {
           date: '10/01/2020 15:50:00',
-          text: 'Si, ma preferirei andare al cinema',
+          text: '',
           status: 'received'
         }
       ],
     },
-  message: '',
+    message: ''
 
 },
  methods: {
    clickedConversation: function(index) {
      this.activeIndex = index
    },
-   sendMessageFx: function() {
-     alert('prova')
+   sendMessageFx: function(index) {
+     // alert('prova')
+     this.contacts[index].messages.push({
+       date: '10/01/2020 15:50:00',
+       text: this.message,
+       status: 'sent'
+     })
    }
  }
 });
