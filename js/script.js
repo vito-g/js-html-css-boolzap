@@ -133,7 +133,7 @@ new Vue({
      this.activeIndex = index
    },
 
-   lastAccesFx: function(index) {
+   lastAccessFx: function(index) {
      // let lastMsgObjectNum = this.contacts[activeIndex].messages.length ;
      let lastMsgObjectIndex = this.contacts[index].messages.length - 1 ;
      // console.log('Il contatto di indice ' + activeIndex + ' ha un numero di msg pari a: ' + lastMsgObjectNum);
