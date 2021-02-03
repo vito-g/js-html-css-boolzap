@@ -28,6 +28,7 @@ new Vue({
  el: '#root',
  data: {
    activeIndex: 0,
+   message: '',
    contactText: '',
    contacts: [
 	{
@@ -125,30 +126,30 @@ new Vue({
           status: 'received'
         }
       ],
-    },
-    message: ''
-
+    }
 },
+
  methods: {
+
    clickedConversation: function(index) {
      this.activeIndex = index
    },
 
    lastAccessFx: function(index) {
-     // let lastMsgObjectNum = this.contacts[activeIndex].messages.length ;
-     let lastMsgObjectIndex = this.contacts[index].messages.length - 1 ;
+     // let lastMsgObjectNum = this.contacts[activeIndex].messages.length;
+     let lastMsgObjectIndex = this.contacts[index].messages.length - 1;
      // console.log('Il contatto di indice ' + activeIndex + ' ha un numero di msg pari a: ' + lastMsgObjectNum);
      // console.log('Il contatto indice ' + activeIndex + ' ha indice dell\'ultimo msg pari a: ' + lastMsgObjectIndex);
      return this.contacts[index].messages[lastMsgObjectIndex].date;
    },
 
    sendMessageFx: function(index) {
-     // alert('prova')
+     // alert('prova');
      this.contacts[index].messages.push({
        date: '10/01/2020 15:50:00',
        text: this.message,
        status: 'sent'
-     })
+     });
      this.message = '';
      let contact = this.contacts;
      setTimeout(function(){
@@ -177,4 +178,5 @@ new Vue({
 
  }
 });
+
 Vue.config.devtools = true;
