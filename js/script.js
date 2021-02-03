@@ -28,6 +28,7 @@ new Vue({
  el: '#root',
  data: {
    activeIndex: 0,
+   contactText: '',
    contacts: [
 	{
 		name: 'Michele',
@@ -160,7 +161,12 @@ new Vue({
       });
       // console.log('ciao');
     }, 1000);
-   }
+  },
+
+  searchForContactFx: function() {
+    
+  }
+
  }
 });
 Vue.config.devtools = true;
