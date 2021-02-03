@@ -132,6 +132,14 @@ new Vue({
    clickedConversation: function(index) {
      this.activeIndex = index
    },
+
+   lastAccesFx: function(index) {
+     let lastMsgObjectNum = this.contacts[0].messages.length ;
+     let lastMsgObjectIndex = this.contacts[0].messages.length - 1 ;
+     console.log('Il contatto num 1 ha un numero di msg pari a: ' + lastMsgObjectNum);
+     console.log('Il contatto num 1 ha indice dell\'ultimo msg pari a: ' + lastMsgObjectIndex);
+   },
+
    sendMessageFx: function(index) {
      // alert('prova')
      this.contacts[index].messages.push({
