@@ -133,11 +133,12 @@ new Vue({
      this.activeIndex = index
    },
 
-   lastAccesFx: function(activeIndex) {
-     let lastMsgObjectNum = this.contacts[activeIndex].messages.length ;
-     let lastMsgObjectIndex = this.contacts[activeIndex].messages.length - 1 ;
-     console.log('Il contatto di indice ' + activeIndex + ' ha un numero di msg pari a: ' + lastMsgObjectNum);
-     console.log('Il contatto indice ' + activeIndex + ' ha indice dell\'ultimo msg pari a: ' + lastMsgObjectIndex);
+   lastAccesFx: function(index) {
+     // let lastMsgObjectNum = this.contacts[activeIndex].messages.length ;
+     let lastMsgObjectIndex = this.contacts[index].messages.length - 1 ;
+     // console.log('Il contatto di indice ' + activeIndex + ' ha un numero di msg pari a: ' + lastMsgObjectNum);
+     // console.log('Il contatto indice ' + activeIndex + ' ha indice dell\'ultimo msg pari a: ' + lastMsgObjectIndex);
+     return this.contacts[index].messages[lastMsgObjectIndex].date;
    },
 
    sendMessageFx: function(index) {
