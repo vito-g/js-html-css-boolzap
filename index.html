@@ -54,7 +54,7 @@
               'contact-visible': (element.visible === true),
               'contact-invisible': (element.status === false)
             }"> -->
-            <div v-for="(element, index) in contacts" class="single-contact" @click="clickedConversation(index)" v-if="(element.visible = false)"  class="unshow"  >
+            <div v-for="(element, index) in contacts" class="single-contact" @click="clickedConversation(index)" v-if="element.visible == true">
               <div class="box-avatar">
                 <img :src="element.avatar" alt="">
                 <!-- <img :src="contacts[index].avatar" alt=""> -->
