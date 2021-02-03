@@ -63,7 +63,10 @@
 
           </div>
         </aside>
+
+        <!-- MAIN -->
         <div class="main fl">
+          <!-- MAIN Top -->
           <div class="main-top">
             <div class="main-top-stripe">
               <div class="left">
@@ -87,25 +90,7 @@
 
             <!-- CHAT LIST -->
             <div class="chat-list">
-              <!-- ---------------------------------------------------------- -->
-<!-- ------------------------OTTAVIO------------------------------------------- -->
-              <!-- <div v-for="message in contacts[activeIndex].messages"
-              :class="message.status">
-                <div class="chat-box user">
-                  {{message.text}}
-                </div>
-              </div> -->
-<!-- ----------------------END Ottavio---------------------------------- -->
-<!-- --------------Qui funziona in parte---------- -->
-              <!-- <div v-for="element in contacts[activeIndex].messages"
-              :class="{
-                element: true
-              }">
-                <div class="chat-box sent">
-                  {{element.text}}
-                </div>
-              </div> -->
-<!---------------- END Qui funziona in parte------------------------------ -->
+
               <div v-for="element in contacts[activeIndex].messages"
               :class="{
                 'chat-row sent': (element.status === 'sent'),
@@ -117,30 +102,19 @@
                 {{element.text}}
                 </div>
               </div>
-<!-- ------------------------------------------------------------------- -->
-              <!--<div class="chat-row-guest">
-                <div class="chat-box">
 
-                </div>
-              </div>-->
-              <!-- <div v-for="index in contacts.messages" class="chat-row">
-                <div class="chat-box">
-                  {{contacts.messages.text}}
-                </div>
-              </div> -->
-
-            <!-- --------------------------------------------------------------- -->
             </div>
             <!-- END CHAT LIST -->
-
+            
           </div>
+          <!-- END MAIN Top -->
+
           <div class="main-bottom">
             <div class="pic">
               <i class="far fa-smile"></i>
             </div>
             <div class="msg-box">
               <input v-model="message" type="search" name="" value="" placeholder="Scrivi un messaggio" @keyup.enter="sendMessageFx(activeIndex)">
-              <!-- <input type="search" name="" value="" placeholder="Scrivi un messaggio"> -->
             </div>
             <div class="pic">
               <i class="fas fa-microphone"></i>
@@ -150,7 +124,7 @@
           </div>
 
         </div>
-
+        <!-- END MAIN -->
       </div>
       <!-- END Contenitore di Visualizzazione di Vue -->
 
