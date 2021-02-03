@@ -50,10 +50,6 @@
             <input v-model="contactText" @keyup="searchForContactFx" type="search" name="" value="" placeholder="Cerca o inizia una nuova chat">
           </div>
           <div class="contacts">
-            <!-- <div v-for="(element, index) in contacts" class="single-contact" @click="clickedConversation(index)" :class="{
-              'contact-visible': (element.visible === true),
-              'contact-invisible': (element.status === false)
-            }"> -->
             <div v-for="(element, index) in contacts" class="single-contact" @click="clickedConversation(index)" v-if="element.visible == true">
               <div class="box-avatar">
                 <img :src="element.avatar" alt="">
