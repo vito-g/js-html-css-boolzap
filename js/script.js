@@ -164,7 +164,15 @@ new Vue({
   },
 
   searchForContactFx: function() {
-    
+    this.contacts.forEach((element) => {
+      if (element.name.toLowerCase().includes(this.contactText.toLowerCase())) {
+        element.visible = true;
+        console.log(element.visible);
+      } else {
+        element.visible = false;
+        console.log(element.visible);
+      }
+    });
   }
 
  }
