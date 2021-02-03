@@ -13,16 +13,24 @@
 
     <!-- Contenitore di tutto -->
     <div class="sfondo">
-      <div class="back-band">
 
+
+
+      <div class="back-band">
       </div>
+
+
       <!-- Contenitore di Visualizzazione di Vue -->
       <div id="root" class="container clearfix">
+
+
+        <!-- ASIDE -->
         <aside class="fl">
+
+          <!-- Aside Top Stripe -->
           <div class="aside-top-stripe">
             <div class="left">
               <div class="pic">
-                <!-- <img src="img/avatar_io.jpg" alt=""> -->
                 <img :src="user.avatar" alt="">
               </div>
               <div class="name fnt-sz-minor">{{user.name}}</div>
@@ -32,8 +40,10 @@
               <i class="fas fa-comment-alt"></i>
               <i class="fas fa-ellipsis-v"></i>
             </div>
-
           </div>
+          <!-- END Aside Top Stripe -->
+
+          <!-- Aside Serving Stripe -->
           <div class="serving-stripe">
             <div class="bell">
               <i class="fas fa-bell-slash"></i>
@@ -45,29 +55,39 @@
               </div>
             </div>
           </div>
+          <!-- END Aside Serving Stripe -->
+
+          <!-- Aside Search Stripe -->
           <div class="search-stripe">
             <i class="fas fa-search"></i>
             <input v-model="contactText" @keyup="searchForContactFx" type="search" name="" value="" placeholder="Cerca o inizia una nuova chat">
           </div>
+          <!-- END Aside Search Stripe -->
+
+          <!-- Aside Contacts -->
           <div class="contacts">
             <div v-for="(element, index) in contacts" class="single-contact" @click="clickedConversation(index)" v-if="element.visible == true">
               <div class="box-avatar">
                 <img :src="element.avatar" alt="">
-                <!-- <img :src="contacts[index].avatar" alt=""> -->
               </div>
               <div class="name">
                 {{element.name}}
-                <!-- {{contacts[index].name}} -->
               </div>
             </div>
-
           </div>
+          <!-- END Aside Contacts -->
+
         </aside>
+        <!-- END ASIDE -->
+
 
         <!-- MAIN -->
         <div class="main fl">
-          <!-- MAIN Top -->
+
+          <!-- Main Top -->
           <div class="main-top">
+
+            <!-- Main Top Stripe -->
             <div class="main-top-stripe">
               <div class="left">
                 <div class="pic">
@@ -87,28 +107,30 @@
                 <i class="fas fa-ellipsis-v"></i>
               </div>
             </div>
+            <!-- END Main Top Stripe -->
 
-            <!-- CHAT LIST -->
+            <!-- chat list -->
             <div class="chat-list">
-
               <div v-for="element in contacts[activeIndex].messages"
               :class="{
                 'chat-row sent': (element.status === 'sent'),
                 'chat-row received': (element.status === 'received')
               }">
-                <div :class="{
+                <div
+                :class="{
                 'chat-box sent': (element.status === 'sent'),
-                'chat-box received': (element.status === 'received')}">
+                'chat-box received': (element.status === 'received')
+                }">
                 {{element.text}}
                 </div>
               </div>
-
             </div>
-            <!-- END CHAT LIST -->
+            <!-- END chat list -->
 
           </div>
-          <!-- END MAIN Top -->
+          <!-- END Main Top -->
 
+          <!-- Main Bottom -->
           <div class="main-bottom">
             <div class="pic">
               <i class="far fa-smile"></i>
@@ -119,17 +141,21 @@
             <div class="pic">
               <i class="fas fa-microphone"></i>
             </div>
-
-
           </div>
+          <!-- END Main Bottom -->
 
         </div>
         <!-- END MAIN -->
+
+
       </div>
       <!-- END Contenitore di Visualizzazione di Vue -->
 
+
+
     </div>
     <!-- END Contenitore di tutto -->
+
 
     <script src="js/script.js" charset="utf-8"></script>
   </body>
