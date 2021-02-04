@@ -35,7 +35,7 @@ body {
   z-index: -1;
 }
 
-.container {
+#root {
   width: 80%;
   min-width: 950px;
   margin: 20px auto;
