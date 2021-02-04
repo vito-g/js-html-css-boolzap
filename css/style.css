@@ -19,7 +19,7 @@ body {
   float: left;
 }
 
-.sfondo {
+#sfondo {
   background-color: #d6dbd7;
   position: fixed;
   width: 100%;
