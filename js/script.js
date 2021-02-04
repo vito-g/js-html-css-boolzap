@@ -132,7 +132,7 @@ new Vue({
  methods: {
 
    clickedConversation: function(index) {
-     this.activeIndex = index
+     this.activeIndex = index;
    },
 
    lastAccessFx: function(index) {
