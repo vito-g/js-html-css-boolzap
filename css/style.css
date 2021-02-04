@@ -24,7 +24,6 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  /* z-index: -1; */
 }
 
 .back-band {
@@ -41,14 +40,11 @@ body {
   min-width: 950px;
   margin: 20px auto;
   height: calc(100vh - 40px);
-  /* min-height:200px; */
-  /* border: 1px solid green; */
 }
 
 .pic {
   width: 70px;
   height: 100%;
-  /* border: 1px solid black; */
   display: flex;
 }
 
@@ -77,9 +73,7 @@ aside {
 }
 
 .aside-top-stripe .left, .aside-top-stripe .right, .main-top-stripe .left, .main-top-stripe .right {
-  /* width: 172px; */
   width: 250px;
-  /* border: 1px solid red; */
 }
 
 .aside-top-stripe .right, .main-top-stripe .right {
@@ -179,7 +173,6 @@ input {
 .contacts {
   overflow-y: scroll;
   height: calc(100vh - 240px);
-  /* border: 1px solid black; */
 }
 
 .contacts .name {
@@ -223,13 +216,11 @@ line-height: 70px;
 }
 
 .main-top {
-  /* background-color: black; */
   background-image: url("../img/mine.jpg");
 }
 
 .chat-list {
   padding-top: 40px;
-  /* border: 1px solid red; */
   overflow-y: scroll;
   height: calc(100vh - 180px);
   min-height: 60px;
@@ -266,10 +257,6 @@ line-height: 70px;
   background-color: white;
 }
 
-.msg {
-  /* padding: 10px; */
-}
-
 /* .time {
   position: relative;
   width: 60px;
@@ -292,5 +279,4 @@ line-height: 70px;
   display: flex;
   height: 100%;
   width: calc(100% - 140px);
-  /* border: 1px solid black; */
 }
