@@ -146,7 +146,6 @@ new Vue({
      return dateString;
    },
 
-
    sendMessageFx: function(index) {
      this.contacts[index].messages.push({
        date: this.currentDate(),
