@@ -16,7 +16,7 @@
 
 
 
-      <div class="back-band">
+      <div id="back-band">
       </div>
 
 
@@ -28,9 +28,9 @@
         <aside class="fl">
 
           <!-- Aside Top Stripe -->
-          <div class="aside-top-stripe">
+          <div id="aside-top-stripe">
             <div class="left">
-              <div class="pic">
+              <div class="square">
                 <img :src="user.avatar" alt="">
               </div>
               <div class="name fnt-sz-minor">{{user.name}}</div>
@@ -44,11 +44,11 @@
           <!-- END Aside Top Stripe -->
 
           <!-- Aside Serving Stripe -->
-          <div class="serving-stripe">
-            <div class="bell">
+          <div id="serving-stripe">
+            <div id="bell">
               <i class="fas fa-bell-slash"></i>
             </div>
-            <div class="serving-text fnt-sz-minor">
+            <div id="serving-text" class="fnt-sz-minor">
               Ricevi notifiche di nuovi messaggi
               <div>
                 <a href="#"> Attiva notifiche desktop</a>
@@ -58,14 +58,14 @@
           <!-- END Aside Serving Stripe -->
 
           <!-- Aside Search Stripe -->
-          <div class="search-stripe">
+          <div id="search-stripe">
             <i class="fas fa-search"></i>
             <input v-model="contactText" @keyup="searchForContactFx" type="search" name="" value="" placeholder="Cerca o inizia una nuova chat">
           </div>
           <!-- END Aside Search Stripe -->
 
           <!-- Aside Contacts -->
-          <div class="contacts">
+          <div id="contacts">
             <div v-for="(element, index) in contacts" class="single-contact" @click="clickedConversation(index)" v-if="element.visible == true">
               <div class="box-avatar">
                 <img :src="element.avatar" alt="">
@@ -81,16 +81,18 @@
         <!-- END ASIDE -->
 
 
+
+
         <!-- MAIN -->
-        <div class="main fl">
+        <main class="fl">
 
           <!-- Main Top -->
-          <div class="main-top">
+          <div id="top">
 
             <!-- Main Top Stripe -->
             <div class="main-top-stripe">
               <div class="left">
-                <div class="pic">
+                <div class="square">
                     <img :src="contacts[activeIndex].avatar" alt="">
                 </div>
                 <div class="name">
@@ -110,7 +112,7 @@
             <!-- END Main Top Stripe -->
 
             <!-- chat list -->
-            <div class="chat-list">
+            <div id="chat-list">
               <div v-for="element in contacts[activeIndex].messages"
               :class="{
                 'chat-row sent': (element.status === 'sent'),
@@ -131,20 +133,20 @@
           <!-- END Main Top -->
 
           <!-- Main Bottom -->
-          <div class="main-bottom">
-            <div class="pic">
+          <div id="bottom">
+            <div class="square">
               <i class="far fa-smile"></i>
             </div>
             <div class="msg-box">
               <input v-model="message" type="search" name="" value="" placeholder="Scrivi un messaggio" @keyup.enter="sendMessageFx(activeIndex)">
             </div>
-            <div class="pic">
+            <div class="square">
               <i class="fas fa-microphone"></i>
             </div>
           </div>
           <!-- END Main Bottom -->
 
-        </div>
+        </main>
         <!-- END MAIN -->
 
 
@@ -158,6 +160,6 @@
 
 
     <script src="js/script.js" charset="utf-8"></script>
-    
+
   </body>
 </html>

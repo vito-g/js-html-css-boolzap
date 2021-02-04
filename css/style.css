@@ -26,7 +26,7 @@ body {
   height: 100%;
 }
 
-.back-band {
+#back-band {
   background-color: #009788;
   height: 110px;
   width:100%;
@@ -42,7 +42,7 @@ body {
   height: calc(100vh - 40px);
 }
 
-.pic {
+.square {
   width: 70px;
   height: 100%;
   display: flex;
@@ -55,11 +55,11 @@ aside {
   border-right: 1px solid #0e0e88;
 }
 
-.aside-top-stripe .left, .main-top-stripe .left{
+#aside-top-stripe .left, .main-top-stripe .left{
   display: flex;
 }
 
-.aside-top-stripe .left > div:last-child {
+#aside-top-stripe .left > div:last-child {
   margin: auto 0;
 }
 
@@ -72,23 +72,23 @@ aside {
   font-weight: 400;
 }
 
-.aside-top-stripe .left, .aside-top-stripe .right, .main-top-stripe .left, .main-top-stripe .right {
+#aside-top-stripe .left, #aside-top-stripe .right, .main-top-stripe .left, .main-top-stripe .right {
   width: 250px;
 }
 
-.aside-top-stripe .right, .main-top-stripe .right {
+#aside-top-stripe .right, .main-top-stripe .right {
   display: flex;
   justify-content: flex-end;
   padding-right: 8px;
 }
 
-.aside-top-stripe .right i, .main-top-stripe .right i {
+#aside-top-stripe .right i, .main-top-stripe .right i {
   color: #b1b1b1;
   font-size: 20px;
   margin: auto 8px;
 }
 
-.main-bottom i {
+main #bottom i {
   color: #6d717c;
   font-size: 24px;
   margin: auto;
@@ -98,14 +98,14 @@ i, img, .single-contact, .name {
   cursor: pointer;
 }
 
-.serving-stripe {
+#serving-stripe {
   display: flex;
   height: 80px;
   background-color: #8edafc;
   width: 100%;
 }
 
-.serving-stripe .bell {
+#serving-stripe #bell {
   background-color: white;
   width: 60px;
   height: 60px;
@@ -118,33 +118,33 @@ i, img, .single-contact, .name {
   font-size: 13px;
 }
 
-.serving-stripe .serving-text {
+#serving-stripe #serving-text {
   margin: auto 0;
 }
 
-.serving-stripe .serving-text > div {
+#serving-stripe #serving-text > div {
   font-size: 11px;
   font-weight: 400;
 }
 
-.serving-stripe .bell i {
+#serving-stripe #bell i {
   margin: auto;
   color: #8edafc;
   font-size: 20px;
 }
 
-.serving-stripe a {
+#serving-stripe a {
   color: #417992;
 }
 
-.search-stripe {
+#search-stripe {
   background-color: #fbfaf8;
   height: 50px;
   display: flex;
   position: relative;
 }
 
-.search-stripe i {
+#search-stripe i {
   position: absolute;
   top: 50%;
   left: 8%;
@@ -159,27 +159,26 @@ input {
   border: none;
 }
 
-.search-stripe input {
+#search-stripe input {
   padding-left: 16%;
 }
 
-
-.main-bottom .msg-box input {
+main #bottom .msg-box input {
   border-radius: 3px;
   border: 1.7px solid #11100e;
   padding: 20px 15px;
 }
 
-.contacts {
+#contacts {
   overflow-y: scroll;
   height: calc(100vh - 240px);
 }
 
-.contacts .name {
+#contacts .name {
   font-size: 15px;
 }
 
-.contacts > div:hover {
+#contacts > div:hover {
   background-color: #eceeee;
 }
 
@@ -210,16 +209,16 @@ span.name {
 line-height: 70px;
 }
 
-.main {
+main {
   height: 100%;
   width: 65%;
 }
 
-.main-top {
+main #top {
   background-image: url("../img/mine.jpg");
 }
 
-.chat-list {
+#chat-list {
   padding-top: 40px;
   overflow-y: scroll;
   height: calc(100vh - 180px);
@@ -231,7 +230,6 @@ line-height: 70px;
   width: 100%;
   padding: 10px 86.4688px;
 }
-
 
 .chat-row.sent{
   flex-direction: row-reverse;
@@ -268,14 +266,14 @@ line-height: 70px;
   bottom: 0;
 } */
 
-.main-bottom, .main-top-stripe, .aside-top-stripe {
+main #bottom, .main-top-stripe, #aside-top-stripe {
   height: 70px;
   background-color: #f3eeea;
   display: flex;
   justify-content: space-between;
 }
 
-.main-bottom .msg-box {
+main #bottom .msg-box {
   display: flex;
   height: 100%;
   width: calc(100% - 140px);

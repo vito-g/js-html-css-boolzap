@@ -121,7 +121,7 @@ new Vue({
       visible: true,
       messages: [
         {
-          date: '10/01/2020 15:50:00',
+          date: '23/12/2020 19:50:00',
           text: '',
           status: 'received'
         }
@@ -140,17 +140,25 @@ new Vue({
      return this.contacts[index].messages[lastMsgObjectIndex].date;
    },
 
+   currentDate: function() {
+     let today = new Date();
+     let dateString = today.toLocaleString().replace(',','');
+     return dateString;
+   },
+
+
    sendMessageFx: function(index) {
      this.contacts[index].messages.push({
-       date: '10/01/2020 15:50:00',
+       date: this.currentDate(),
        text: this.message,
        status: 'sent'
      });
      this.message = '';
      let contact = this.contacts;
+     let that = this;
      setTimeout(function(){
       contact[index].messages.push({
-        date: '10/01/2020 15:50:00',
+        date: that.currentDate(),
         text: 'ok',
         status: 'received'
       });
@@ -161,10 +169,8 @@ new Vue({
     this.contacts.forEach((element) => {
       if (element.name.toLowerCase().includes(this.contactText.toLowerCase())) {
         element.visible = true;
-        console.log(element.visible);
       } else {
         element.visible = false;
-        console.log(element.visible);
       }
     });
   }
